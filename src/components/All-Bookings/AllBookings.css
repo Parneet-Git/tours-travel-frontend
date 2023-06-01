@@ -1,0 +1,74 @@
+.dashboard {
+    text-align: center;
+    color: var(--secondary-color);
+    margin: 0.75rem 0;
+}
+
+.brief-info {
+    display: flex;
+    justify-content: space-around;
+    gap: 5rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.brief-info-box {
+    background-color: var(--secondary-color);
+    padding: 2rem 2.5rem;
+    border-radius: 7px;
+    color: white;
+    display: flex;
+    gap: 2rem;
+}
+
+.brief-info .nums {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.brief-info .icon {
+    font-size: 2rem;
+}
+
+.table-striped>tbody>tr:nth-of-type(odd)>* {
+    --bs-table-accent-bg: var(--secondary-color) !important;
+}
+
+@media only screen and (max-width : 992px) {
+    .offset-sm-1 {
+        margin: 0 !important;
+    }
+    .brief-info {
+        gap: 1vw;
+    }
+}
+
+@media only screen and (max-width : 800px) {
+    .brief-info .brief-info-box {
+        padding: 1rem 1.5rem;
+    }
+}
+
+@media only screen and (max-width : 700px) {
+    .brief-info-box {
+        flex-direction: column;
+        gap: 1rem;
+        margin: auto;
+    }
+}
+
+@media only screen and (max-width : 500px) {
+    .brief-info {
+        flex-direction: column;
+    }
+    .brief-info-box {
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-around;
+    }
+    .brief-info-box .nums {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+}
