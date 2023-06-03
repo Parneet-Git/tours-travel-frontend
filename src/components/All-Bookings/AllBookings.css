@@ -71,4 +71,7 @@
         display: flex;
         justify-content: space-around;
     }
+    .bookings-container .all-bookings .custom-row {
+        overflow-x: scroll;
+    }
 }

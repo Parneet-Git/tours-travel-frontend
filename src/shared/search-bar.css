@@ -39,7 +39,6 @@
     color: #fff;
     border-radius: 10px 5px 10px 5px;
     cursor: pointer;
-
 }
 
 
@@ -67,11 +66,30 @@
     }
     .form__group h6 {
         font-size: 1rem;
-    }
-    
+    }   
 }
 
-
+@media only screen and (max-width : 450px) {
+    .search__bar form {
+        flex-direction: column;
+    }
+    .search__bar .form__group div {
+        width: 100%;
+    }
+    .search__bar .form__group div input {
+        font-size: medium;
+        margin-top: 0.5rem;
+    }
+    .search__icon {
+        width: 100%;
+    }
+    .search__icon i {
+        display: block;
+        width: 100%;
+        text-align: center;
+        border-radius: 0.75rem;
+    }
+}
  
 
 

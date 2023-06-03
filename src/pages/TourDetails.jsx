@@ -18,7 +18,7 @@ const TourDetails = () => {
   const reviewMsgRef = useRef('');
   const [tourRating, setTourRating] = useState(5);
   const { user } = useContext(AuthContext);
-  const [carouselImages, setCarouselImages] = useState(null);
+  const [carouselImages, setCarouselImages] = useState([]);
   const [weatherData, setWeatherData] = useState(null);
 
   // fetching data from database
